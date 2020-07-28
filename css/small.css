@@ -1,0 +1,19 @@
+/* 모바일 기본 글자 크기 */
+body {
+  font-size: 1.5rem;
+  background-color: pink;
+}
+/* 모바일 레이아웃 */
+.appHeader,
+.appMain {
+  width: 100%;
+}
+/* 모바일 네비게이션 */
+.appNavigation {
+  position: fixed; /*그자리에 그대로 떠있도록*/
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
+  transform: translateX(-100%);
+}
