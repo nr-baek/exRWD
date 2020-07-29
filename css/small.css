@@ -9,13 +9,16 @@ body {
 }
 /* 모바일 헤더 */
 .appHeader {
-  grid-template: auto / 1fr ;
+  grid-template: auto / 1fr;
   background-color: #38302e;
 }
-.brand, .memberOnly, .searchForm {
+.brand,
+.memberOnly,
+.searchForm {
   padding: 10px 20px;
 }
-.brand *{
+/* 모바일 브랜드 */
+.brand * {
   display: block;
 }
 /* 모바일 멤버 링크 */
@@ -23,7 +26,6 @@ body {
   order: -1;
   background-color: #988574;
   color: #fff;
-  /* display: flex; */
 }
 /* 모바일 검색 폼 */
 input[type="search"] {
@@ -35,9 +37,8 @@ input[type="search"] {
   height: 35px;
   border: 0;
   padding: 0;
-  /* float: right; */
-  position: relative;
   background-color: transparent;
+  position: relative;
 }
 .buttonSearch::after {
   content: "";
@@ -46,14 +47,21 @@ input[type="search"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: transparent url(./images/btn_search.png) 0 0 / cover no-repeat scroll;
+  background: transparent url(./images/btn_search.png) 0 0 /cover no-repeat scroll;
 }
-/* 모바일 네비게이션 */
+
+/* 모바일 내비게이션 */
 .appNavigation {
-  position: fixed; /*그자리에 그대로 떠있도록*/
+  position: fixed;
   top: 0;
   left: 0;
   width: 70vw;
   height: 100vh;
   transform: translateX(-100%);
+}
+/* 모바일 메인 콘텐츠 */
+.appMain {
+}
+/* 모바일 푸터 */
+.appFooter {
 }
