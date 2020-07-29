@@ -51,9 +51,8 @@ input[type="search"] {
 }
 
 /* 모바일 내비게이션 */
-.appNavigation {
-  /* position: relative; */
-}
+/* .appNavigation {
+} */
 /* 모바일 메뉴 제어 버튼 */
 .buttonBurger {
   width: 35px;
