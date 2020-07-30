@@ -38,9 +38,17 @@ input[type="search"] {
   border: 0;
   padding: 0;
   background-color: transparent;
-  position: relative;
+  /* position: relative; */
+  /* position: absolute; */
+  padding-top: 35px;
+  overflow: hidden;
+  background-image: url(./images/btn_search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+  
 }
-.buttonSearch::after {
+/* .buttonSearch::after {
   content: "";
   position: absolute;
   top: 0;
@@ -48,7 +56,7 @@ input[type="search"] {
   width: 100%;
   height: 100%;
   background: transparent url(./images/btn_search.png) 0 0 /cover no-repeat scroll;
-}
+} */
 
 /* 모바일 내비게이션 */
 /* .appNavigation  {
@@ -105,8 +113,47 @@ input[type="search"] {
   left: 0;
   width: 70vw;
   height: 100vh;
-  transform: translateX(-100%);
+  transform: translateX(-105%);
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(3px);
+  padding: 20px;
 }
+
+/* .menu__item {
+  display: flex;
+  flex-flow: row wrap;
+} */
+/* .menu__item::before {
+  vertical-align: middle;
+} */
+.menu__link {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: calc(100% - 1.5em);
+}
+.menu__subMenu {
+  font-size: 1.6;
+  display: none;
+  width:100%;
+}
+.menu__subMenu li {
+  margin: 10px 0;
+}
+.menu__subMenu a {
+  display: block;
+  padding: 5px 0;
+}
+.menuAct .menu__subMenu {
+  display: block;
+}
+
+.isAct .menu__list {
+  transform: none;
+}
+
 
 /* 모바일 메인 콘텐츠 */
 .appMain {
@@ -120,6 +167,7 @@ input[type="search"] {
   height:10vh;
   /* background-color: pink; */
 }
+
 /* 모바일 푸터 */
 .appFooter {
 }
