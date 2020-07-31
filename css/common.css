@@ -15,7 +15,6 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -312,6 +311,7 @@ input[type="search"] {
 }
 /* 공통 메인 콘텐츠 섹션 제목 */
 .appMain [class*="__title"] {
+  padding-top: 7px;
   margin: 0;
   font-size: 1.6rem;
 }
@@ -426,6 +426,70 @@ video.responsive {
   padding-top: 0.42857142857142855%;
 }
 
+/* 공통 게시판 */
+.board {
+  /* background-color: #ff0; */
+  position: relative;
+  /* width: 320px; */
+}
+.board__list {
+  margin: 15px 0;
+}
+.board__list a {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board__list li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.board__more {
+  padding: 8px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+/* 공통 인기 사이트 */
+.favorite__list {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+.favorite__list li {
+  counter-increment: num;
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.favorite__list li::before {
+  content: counter(num);
+  color: #fff;
+  background-color: #eea60a;
+  padding: 2px 6px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.favorite__list a {
+  position: relative;
+  flex-grow: 1;
+}
+.favorite__list li a:hover::before,
+.favorite__list li a:focus::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: #eea60a;
+  border: 1px solid #aaa;
+  padding: 5px;
+  top: 1em;
+  z-index: 100;
+  color: #fff;
+  box-shadow: 2px 2px 0 0 #000;
+}
 
 /* 공통 푸터 */
 .appFooter {

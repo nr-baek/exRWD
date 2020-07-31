@@ -172,6 +172,11 @@ input[type="search"] {
 
 /* 추천 서적 */
 
+/* 모바일 인기사이트 */
+.favorite__list li a:hover::before,
+.favorite__list li a:focus::before {
+  left: 10em;
+}
 /* 모바일 푸터 */
 .appFooter {
 }
